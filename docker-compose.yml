@@ -1,0 +1,10 @@
+web:
+  image: nginx
+  volumes:
+    - .:/usr/share/nginx/html
+  ports:
+    - '80'
+  environment:
+    - NGINX_HOST=cookie.local
+    - NGINX_PORT=80
+    - VIRTUAL_HOST=cookie.local
